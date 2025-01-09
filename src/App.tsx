@@ -4,10 +4,12 @@ import Home from "./home/page";
 import About from "./about/page";
 import Contact from "./contact/page";
 import Header from "./components/kit/header";
+import { LenisProvider } from "./context/smooth-scroll";
 
 function App() {
   return (
-    <Router>
+
+    <LenisProvider>
 
 
       <Header/>
@@ -21,9 +23,8 @@ function App() {
 
 
 
-    </Router>
 
-    
+    </LenisProvider>
 
 
   );
