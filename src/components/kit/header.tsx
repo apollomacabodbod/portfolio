@@ -51,9 +51,9 @@ export default function Header(){
           </div>
 
 
-          <div className="lg:flex lg:items-center hidden border border-[#030712] rounded-[6.25em] py-[0.75em] px-[1.25em] gap-[0.75em] cursor-pointer" >
+          <div className="lg:flex lg:items-center hidden bg-[#030712] rounded-[6.25em] py-[0.75em] px-[1.25em] gap-[0.75em] cursor-pointer" >
 
-            <p className="text-[#030712] font-inter-tight text-[1rem] not-italic font-semibold ">Let’s Talk</p>
+            <p className="text-white font-inter-tight text-[1rem] not-italic font-semibold ">Let’s Talk</p>
             <img src="/home-header-arrow.svg" alt="" />
 
 
