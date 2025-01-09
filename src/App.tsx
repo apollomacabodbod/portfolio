@@ -3,23 +3,15 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./home/page";
 import About from "./about/page";
 import Contact from "./contact/page";
+import Header from "./components/kit/header";
 
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+
+
+      <Header/>
+
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,7 +19,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      <div>footer</div>
 
 
     </Router>
