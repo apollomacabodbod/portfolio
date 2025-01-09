@@ -27,7 +27,7 @@ export default function Header(){
 
 
 
-    <div  className={`fixed top-0 left-0 w-full  transition-all duration-1000 ease-in-out z-40 border border-[#50B498] green ${
+    <div  className={`fixed top-0 left-0 w-full  transition-all duration-1000 ease-in-out z-40  ${
       scrolling
         ? 'backdrop-blur-lg bg-black/40 shadow-lg'
         : 'bg-transparent backdrop-blur-none shadow-none'
@@ -35,10 +35,10 @@ export default function Header(){
 
 
     
-      <div className="flex flex-col max-w-[1200px] lg:mx-auto py-[1.2em] px-[1.25em] border border-[#50B498] green">
+      <div className="flex flex-col max-w-[1200px] lg:mx-auto py-[1.2em] px-[1.25em] ">
 
 
-        <div className="flex items-center justify-between border border-[#50B498] green">
+        <div className="flex items-center justify-between ">
 
 
 
