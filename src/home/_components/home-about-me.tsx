@@ -41,7 +41,7 @@ export default function HomeAboutMe(){
             As a frontend developer with a keen eye for visual communication, I’m passionate developing high-quality React.js applications that are both visually stunning and user-friendly. </p>
 
 
-          <p className="font-inter-tight text-[1.125rem] mt-[0.5em] text-center lg:text-start">Tech </p>
+          <p className="font-inter-tight text-[1rem] mt-[0.5em] text-center lg:text-start">Tech </p>
 
           <div className="flex items-center justify-center lg:justify-start mt-[0.5em] gap-[0.5em]">
 
