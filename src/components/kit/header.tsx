@@ -7,7 +7,7 @@ export default function Header(){
 
 
   const [scrolling, setScrolling] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  // const [sidebarOpen, setSidebarOpen] = useState(false);
     
     
     
