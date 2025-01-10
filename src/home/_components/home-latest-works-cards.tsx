@@ -13,7 +13,7 @@ export default function HomeLatestWorksCards(){
 
         <div className="flex items-center cursor-pointer">
 
-          <img src="film.png" alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
+          <img src="filmakers2.png" alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
         </div>
 
 
