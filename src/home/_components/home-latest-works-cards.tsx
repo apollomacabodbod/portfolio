@@ -1,3 +1,9 @@
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "src/components/tooltip"
 
 
 
@@ -64,11 +70,51 @@ export default function HomeLatestWorksCards(){
 
                 <div className="flex items-center gap-[0.4em]">
 
-                  <img src="/JavaScript-logo.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em]"/>
-                  <img src="/logo512.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em]"/>
-                  <img src="/html5.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em]"/>
-                  <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em]"/>
+                 
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
 
+                        <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Tailwind CSS</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/logo512.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>ReactJs</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/Typescript_logo_2020.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Typescript</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
 
                 </div>
 
@@ -154,11 +200,77 @@ export default function HomeLatestWorksCards(){
 
                 <div className="flex items-center gap-[0.4em]">
 
-                  <img src="/JavaScript-logo.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em]"/>
-                  <img src="/logo512.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em]"/>
-                  <img src="/html5.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em]"/>
-                  <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em]"/>
 
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Tailwind CSS</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/logo512.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>ReactJs</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/Typescript_logo_2020.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Typescript</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/shadcnUI.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+
+
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>ShadcnUI</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
+
+
+
+                 
+                 
+                 
+                  
 
                 </div>
 
