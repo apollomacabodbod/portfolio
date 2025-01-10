@@ -1,3 +1,10 @@
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "src/components/tooltip"
+
 
 
 
@@ -38,12 +45,98 @@ export default function HomeAboutMe(){
 
           <div className="flex items-center justify-center lg:justify-start mt-[0.5em] gap-[0.5em]">
 
-            <img src="/JavaScript-logo.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
-            <img src="/React-icon.svg.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
-            <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
-            <img src="/Typescript_logo_2020.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
-            <img src="/html5.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
-            <img src="/Git_icon.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+
+                  <img src="/JavaScript-logo.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Javascript</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+
+
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+
+                  <img src="/React-icon.svg.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>ReactJs</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+
+                  <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Tailwind CSS</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+
+                  <img src="/Typescript_logo_2020.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Typescript</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+
+
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+
+                  <img src="/html5.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>HTML5</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          
+           
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+
+                  <img src="/Git_icon.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Git</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          
+          
+           
           </div>
 
 
