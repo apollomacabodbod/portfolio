@@ -3,6 +3,33 @@
 
 export default function HomeLatestWorksCards(){
 
+
+  const handleClickFilmina = () => {
+    window.open('https://film-makers-app.vercel.app/');
+  };
+
+
+  const handleClickFilminaButton = () => {
+    window.open('https://film-makers-app.vercel.app/');
+  };
+
+
+
+
+  const handleClickParking = () => {
+    window.open('https://park-camping-app.vercel.app/');
+  };
+
+
+  const handleClickParkingButton = () => {
+    window.open('https://park-camping-app.vercel.app/');
+  };
+
+
+
+
+
+
   return(<>
 
     <div className="grid custom-760:grid-cols-2 mt-[3.5em] gap-[2em] mb-[3.5em]">
@@ -11,7 +38,7 @@ export default function HomeLatestWorksCards(){
       <div className="flex flex-col ">
 
 
-        <div className="flex items-center cursor-pointer">
+        <div className="flex items-center cursor-pointer" onClick={handleClickFilmina}>
 
           <img src="filmakers2.png" alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
         </div>
@@ -62,7 +89,9 @@ export default function HomeLatestWorksCards(){
 
 
 
-            <div className="flex item-center py-[1em] px-[1.75em]  bg-[#030712] rounded-[6.25em] cursor-pointer gap-[0.5em]">
+            <div className="flex item-center py-[1em] px-[1.75em]  bg-[#030712] rounded-[6.25em] cursor-pointer gap-[0.5em]"
+              onClick={handleClickFilminaButton}
+            >
 
               <img src="/home-latest-works-arrow.svg" alt=""  />
 
@@ -99,7 +128,7 @@ export default function HomeLatestWorksCards(){
       <div className="flex flex-col ">
 
 
-        <div className="flex items-center cursor-pointer">
+        <div className="flex items-center cursor-pointer " onClick={handleClickParking}>
 
           <img src="parking.png" alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
         </div>
@@ -150,7 +179,11 @@ export default function HomeLatestWorksCards(){
 
 
 
-            <div className="flex item-center py-[1em] px-[1.75em]  bg-[#030712] rounded-[6.25em] cursor-pointer gap-[0.5em]">
+            <div className="flex item-center py-[1em] px-[1.75em]  bg-[#030712] rounded-[6.25em] cursor-pointer gap-[0.5em]"
+              onClick={handleClickParkingButton}
+            
+            
+            >
 
               <img src="/home-latest-works-arrow.svg" alt=""  />
 
