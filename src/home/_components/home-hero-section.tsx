@@ -31,7 +31,7 @@ export default function HomeHeroSection(){
         <div className="flex flex-col">
 
            
-          <p className="text-[#374151] font-inter-tight text-[1.375rem] not-italic font-normal mt-[1em] lg:mt-[0em] ">I'm Apollo, a frontend developer I specialize in creating intuitive and engaging digital experiences. and building user-friendly interfaces seamlessly.</p>
+          <p className="text-[#374151] font-inter-tight text-[1.375rem] not-italic font-normal mt-[1em] lg:mt-[0em] ">I'm Apollo, a frontend developer I specialize in creating intuitive and engaging digital experiences. and building responsive and user-friendly interfaces.</p>
            
 
         </div>
