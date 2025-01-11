@@ -45,35 +45,50 @@ export default function Header(){
 
           <div className="flex items-center cursor-pointer ">
 
-            <p className="text-[#AEB2BA] font-inter-tight font-bold text-[1.5rem]">apollo</p>
-            <p className="text-[#030712] font-inter-tight font-bold text-[1.5rem]">macabodbod.</p>
+            <p className="text-[#AEB2BA] font-inter-tight font-bold text-[1.1rem] custom-375:text-[1.2rem]">apollo</p>
+            <p className="text-[#030712] font-inter-tight font-bold text-[1.1rem] custom-375:text-[1.2rem]">macabodbod.</p>
 
           </div>
 
 
-          <div className="lg:flex lg:items-center hidden bg-[#030712] rounded-[6.25em] py-[0.75em] px-[1.25em] gap-[0.75em] cursor-pointer" >
-
-            <p className="text-white font-inter-tight text-[1rem] not-italic font-semibold ">Let’s Talk</p>
-            <img src="/home-header-arrow.svg" alt="" />
 
 
-       
+          <div className="flex flex-col ">
+
+
+
+            <div className="flex items-center gap-[0.75em] bg-[#030712] py-[0.75em] px-[1.25em] rounded-[6.25em]" >
+
+
+              <p className="text-white font-inter-tight  not-italic font-semibold text-[1rem] cursor-pointer">Contact</p>
+
+              <img src="/home-header-arrow.svg" alt="" />
+
+
+            </div>
+
+ 
+
 
 
 
           </div>
 
 
-          <div className="flex items-center lg:hidden cursor-pointer rounded-[6.25em] py-[0.875em] px-[1.5em] border border-[#030712]">
+          
 
-            <img src="/home-header-humberger.svg" alt="" />
-
-          </div>
-      
 
 
 
         </div>
+
+
+        {/* <div className="flex items-center lg:hidden cursor-pointer rounded-[6.25em] py-[0.875em] px-[1.5em] border border-[#030712]">
+
+            <img src="/home-header-humberger.svg" alt="" />
+
+          </div> */}
+      
 
 
 
@@ -82,6 +97,9 @@ export default function Header(){
 
 
     </div>
+
+
+
     
   </>)
 
