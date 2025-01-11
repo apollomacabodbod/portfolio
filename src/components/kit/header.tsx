@@ -57,10 +57,10 @@ export default function Header(){
 
 
 
-            <div className="flex items-center gap-[0.75em] bg-[#030712] py-[0.75em] px-[1.25em] rounded-[6.25em]" >
+            <div className="flex items-center gap-[0.75em] bg-[#030712] py-[0.75em] px-[1.25em] rounded-[6.25em] cursor-pointer" >
 
 
-              <p className="text-white font-inter-tight  not-italic font-semibold text-[1rem] cursor-pointer">Contact</p>
+              <p className="text-white font-inter-tight  not-italic font-semibold text-[1rem] ">Contact</p>
 
               <img src="/home-header-arrow.svg" alt="" />
 
