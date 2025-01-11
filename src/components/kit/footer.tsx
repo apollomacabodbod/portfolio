@@ -44,7 +44,7 @@ export default function Footer(){
             }}
           
           
-          >"In battle, plans are useless, but planning is indispensible." - Dwight D. Eisenhower</motion.p>
+          >"The journey of a thousand miles begins with one step." — Lao Tzu</motion.p>
 
           <motion.div className="flex items-center justify-center gap-[1em] mt-[1em] transition-all duration-1000 ease-in-out"
           
