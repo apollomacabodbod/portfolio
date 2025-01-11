@@ -37,9 +37,8 @@ export default function HomeHeroSection(){
 
 
 
-        <motion.div className="flex flex-col mt-[2.5em] lg:mt-[0em] transition-all duration-1000 ease-in-out "
-        
-        
+        <motion.img src="/home-hero-section-divider.svg" alt="" className="w-[19em] mt-[2.5em] lg:mt-[0em] transition-all duration-1000 ease-in-out "
+          
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -51,13 +50,11 @@ export default function HomeHeroSection(){
               transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
             },
           }}
+
+
           
-        
-        >
+        />
 
-          <img src="/home-hero-section-divider.svg" alt="" className="w-full"/>
-
-        </motion.div>
 
 
 
