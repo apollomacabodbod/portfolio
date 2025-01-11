@@ -1,24 +1,25 @@
-import { Button } from "src/components/button";
-import { motion } from "framer-motion";
+import ContactMessage from "./_components/contac-message";
+import ContactDetails from "./_components/contact-details";
+import ContactSubmit from "./_components/contact-submit";
+
+
+
 
 export default function Contact() {
   return (
     <>
-      <div className="flex flex-col px-[2em] bg-orange-400">
-        <p className="">test</p>
-        <Button>Destructive</Button>
-        <motion.p
-          className="font-roboto"
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true, amount: 0.5 }}
-        >
-          demo
-        </motion.p>
+
+      <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em]">
+
+        <ContactMessage/>
+        <ContactDetails/>
+        <ContactSubmit/>
+      
+      
+      
       </div>
 
-      <div className="flex flex-col min-h-screen bg-red-400"></div>
+
     </>
   );
 }
