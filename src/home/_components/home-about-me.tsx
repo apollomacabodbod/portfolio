@@ -26,7 +26,7 @@ export default function HomeAboutMe(){
 
         <div className="flex items-center justify-center border border-[#50B498] green">
 
-          <motion.img src="/test2.png" alt="" className="min-w-[170px] object-cover  rounded-full transition-all duration-1000 ease-in-out"
+          <motion.img src="/profile.jpeg" alt="" className="min-w-[170px] object-cover  rounded-full transition-all duration-1000 ease-in-out"
           
           
             initial="hidden"

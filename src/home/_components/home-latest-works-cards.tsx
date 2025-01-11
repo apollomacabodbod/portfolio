@@ -49,7 +49,7 @@ export default function HomeLatestWorksCards(){
 
         <div className="flex items-center cursor-pointer" onClick={handleClickFilmina}>
 
-          <motion.img src="filmakers2.png" alt="" className="w-full object-cover object-top rounded-[0.25em] transition-all duration-1000 ease-in-out"
+          <motion.img src="filmakers.jpeg" alt="" className="w-full object-cover object-top rounded-[0.25em] transition-all duration-1000 ease-in-out"
           
           
           
@@ -288,7 +288,7 @@ export default function HomeLatestWorksCards(){
         
         >
 
-          <img src="parking.png" alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
+          <img src="parking.jpeg" alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
         </motion.div>
 
 
