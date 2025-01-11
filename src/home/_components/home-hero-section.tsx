@@ -37,7 +37,7 @@ export default function HomeHeroSection(){
 
 
 
-        <motion.div className="flex flex-col mt-[2.5em] lg:mt-[0em] transition-all duration-1000 ease-in-out"
+        <motion.div className="flex flex-col mt-[2.5em] lg:mt-[0em] transition-all duration-1000 ease-in-out "
         
         
           initial="hidden"
@@ -55,7 +55,7 @@ export default function HomeHeroSection(){
         
         >
 
-          <img src="/home-hero-section-divider.svg" alt="" className=""/>
+          <img src="/home-hero-section-divider.svg" alt="" className="w-full"/>
 
         </motion.div>
 
