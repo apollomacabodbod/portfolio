@@ -37,7 +37,7 @@ export default function HomeHeroSection(){
 
 
 
-        <motion.img src="/home-hero-section-divider.svg" alt="" className="w-full lg:w-[304px] mt-[2.5em] lg:mt-[0em] transition-all duration-1000 ease-in-out "
+        <motion.img src="/home-hero-section-divider.svg" alt="" className="w-[304px] mt-[2.5em] lg:mt-[0em] transition-all duration-1000 ease-in-out "
           
           initial="hidden"
           whileInView="visible"
