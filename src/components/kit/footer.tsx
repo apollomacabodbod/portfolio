@@ -4,6 +4,15 @@ import { motion } from "framer-motion";
 export default function Footer(){
 
 
+  const handleClickLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/apollo-macabodbod-832a8a279/');
+  };
+
+
+
+  const handleClickGithub = () => {
+    window.open('https://github.com/apollomacabodbod');
+  };
 
 
   return (<>
@@ -59,8 +68,8 @@ export default function Footer(){
 
          
 
-            <img src="/footer-linkedIn.svg" alt="" />
-            <img src="/footer-github.svg" alt="" />
+            <img src="/footer-linkedIn.svg" alt="" className="cursor-pointer" onClick={handleClickLinkedIn}/>
+            <img src="/footer-github.svg" alt="" className="cursor-pointer" onClick={handleClickGithub}/>
 
           </motion.div>
 
