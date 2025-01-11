@@ -78,6 +78,7 @@ module.exports = {
 
       'custom-760': '760px',
       'custom-375': '375px',
+      'custom-930': '930px',
     }
 
 

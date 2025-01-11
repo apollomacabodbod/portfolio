@@ -16,22 +16,24 @@ export default function Footer(){
 
 
 
-        <div className="flex items-center justify-between">
+        <div className="custom-930:flex custom-930:items-center custom-930:justify-between">
 
 
-          <p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic mt-[0.5em]">apollomacabodbod8 <span className="text-white font-semibold"> @gmail.com</span></p>
       
+          <p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic mt-[0.5em]">"In battle, plans are useless, but planning is indispensible." - Dwight D. Eisenhower</p>
+
+          <div className="flex items-center justify-center gap-[1em] mt-[1em]">
 
 
-          <div className="flex items-center justify-center gap-[1em]">
-
-
-       
+         
 
             <img src="/footer-linkedIn.svg" alt="" />
             <img src="/footer-github.svg" alt="" />
 
           </div>
+
+
+  
 
 
 
@@ -40,14 +42,15 @@ export default function Footer(){
 
 
      
-        <div className="flex flex-col mt-[2em]">
+        <div className="flex flex-col mt-[1em] ">
 
 
-          <div className="flex items-center justify-between">
+          <div className="custom-930:flex items-center custom-930:justify-between">
 
 
             <div className="flex flex-col">
-              <p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic mt-[0.5em]">"In battle, plans are useless, but planning is indispensible." - Dwight D. Eisenhower</p>
+
+              <p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic mt-[0.5em]">apollomacabodbod8 <span className="text-white font-semibold"> @gmail.com</span></p>
 
             </div>
 
