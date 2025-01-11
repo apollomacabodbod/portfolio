@@ -44,12 +44,12 @@ export default function Header(){
 
 
 
-          <div className="flex items-center cursor-pointer ">
+          <Link to={"/"} className="flex items-center cursor-pointer ">
 
             <p className="text-[#AEB2BA] font-inter-tight font-bold text-[1.1rem] custom-375:text-[1.2rem]">apollo</p>
             <p className="text-[#030712] font-inter-tight font-bold text-[1.1rem] custom-375:text-[1.2rem]">macabodbod.</p>
 
-          </div>
+          </Link>
 
 
 
