@@ -24,6 +24,13 @@ export default function HomeLatestWorksCards(){
 
 
 
+  const handleClickFilminaGithub = () => {
+    window.open('https://github.com/apollomacabodbod/film-makers-app');
+  };
+
+
+
+
 
   const handleClickParking = () => {
     window.open('https://park-camping-app.vercel.app/');
@@ -33,6 +40,16 @@ export default function HomeLatestWorksCards(){
   const handleClickParkingButton = () => {
     window.open('https://park-camping-app.vercel.app/');
   };
+
+
+  const handleClickParkingGithub = () => {
+    window.open('https://github.com/apollomacabodbod/park-camping-app');
+  };
+
+
+
+
+
 
 
 
@@ -209,36 +226,81 @@ export default function HomeLatestWorksCards(){
 
 
 
-            <div className="flex item-center  cursor-pointer  transform transition-transform duration-300 hover:scale-110 "
-              onClick={handleClickFilminaButton}
-            >
-
-              <motion.img src="/home-latest-works-arrow.svg" alt="" className="transition-all duration-1000 ease-in-out"
-              
-              
-              
-              
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={{
-                  hidden: { opacity: 0, y: 10 },
-                  visible: { 
-                    opacity: 1, 
-                    y: 0,
-                    transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                  },
-                }}
-              
-              
-              
-              
-              
-              />
+            <div className="flex items-center gap-[0.75em]">
 
 
+              <div className="flex flex-col">
+  
+  
+
+                <div className="flex item-center gap-[0.75em] cursor-pointer  transform transition-transform duration-300 hover:scale-110"
+                  onClick={handleClickFilminaGithub}
+    
+    
+                >
 
 
+                  <motion.img src="/header-github.svg" alt="" className="transition-all duration-1000 ease-in-out" 
+      
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={{
+                      hidden: { opacity: 0, y: 10 },
+                      visible: { 
+                        opacity: 1, 
+                        y: 0,
+                        transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                      },
+                    }}
+      
+      
+                  />
+
+
+
+
+                </div>
+
+  
+              </div>
+
+
+              <div className="flex flex-col">
+  
+  
+
+                <div className="flex item-center gap-[0.75em] cursor-pointer  transform transition-transform duration-300 hover:scale-110"
+                  onClick={handleClickFilminaButton}
+      
+      
+                >
+
+
+                  <motion.img src="/home-latest-works-arrow.svg" alt="" className="transition-all duration-1000 ease-in-out" 
+        
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={{
+                      hidden: { opacity: 0, y: 10 },
+                      visible: { 
+                        opacity: 1, 
+                        y: 0,
+                        transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                      },
+                    }}
+        
+        
+                  />
+
+
+
+
+                </div>
+
+    
+              </div>
 
 
 
@@ -447,45 +509,89 @@ export default function HomeLatestWorksCards(){
 
 
 
+            <div className="flex items-center gap-[0.75em]">
 
 
+              <div className="flex flex-col">
+          
+          
 
-
-
-
-
-            <div className="flex item-center  cursor-pointer  transform transition-transform duration-300 hover:scale-110"
-              onClick={handleClickParkingButton}
+                <div className="flex item-center gap-[0.75em] cursor-pointer  transform transition-transform duration-300 hover:scale-110"
+                  onClick={handleClickParkingGithub}
             
             
-            >
+                >
 
-              <motion.img src="/home-latest-works-arrow.svg" alt="" className="transition-all duration-1000 ease-in-out" 
+
+                  <motion.img src="/header-github.svg" alt="" className="transition-all duration-1000 ease-in-out" 
               
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={{
-                  hidden: { opacity: 0, y: 10 },
-                  visible: { 
-                    opacity: 1, 
-                    y: 0,
-                    transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                  },
-                }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={{
+                      hidden: { opacity: 0, y: 10 },
+                      visible: { 
+                        opacity: 1, 
+                        y: 0,
+                        transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                      },
+                    }}
               
               
-              />
+                  />
 
 
 
 
+                </div>
+
+          
+              </div>
+
+
+              <div className="flex flex-col">
+          
+          
+
+                <div className="flex item-center gap-[0.75em] cursor-pointer  transform transition-transform duration-300 hover:scale-110"
+                  onClick={handleClickParkingButton}
+              
+              
+                >
+  
+  
+                  <motion.img src="/home-latest-works-arrow.svg" alt="" className="transition-all duration-1000 ease-in-out" 
+                
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={{
+                      hidden: { opacity: 0, y: 10 },
+                      visible: { 
+                        opacity: 1, 
+                        y: 0,
+                        transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                      },
+                    }}
+                
+                
+                  />
+  
+  
+  
+  
+                </div>
+  
+            
+              </div>
 
 
 
 
 
             </div>
+
+
 
                     
 
