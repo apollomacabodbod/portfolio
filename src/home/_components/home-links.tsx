@@ -1,4 +1,6 @@
 
+import { motion } from "framer-motion";
+
 
 export default function HomeLinks(){
 
@@ -30,7 +32,23 @@ export default function HomeLinks(){
             
             
 
-        <div className="flex items-center gap-[0.75em] cursor-pointer" onClick={handleClickLinkedIn}>
+        <motion.div className="flex items-center gap-[0.75em] cursor-pointer transition-all duration-1000 ease-in-out" onClick={handleClickLinkedIn}
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+          
+        
+        >
 
        
 
@@ -39,17 +57,33 @@ export default function HomeLinks(){
           <img src="/home-links.svg" alt=""  className="transform transition-transform duration-300 hover:scale-110"/>
 
 
-        </div>
+        </motion.div>
 
 
-        <div className="flex items-center gap-[0.75em] cursor-pointer" onClick={handleClickGithub}>
+        <motion.div className="flex items-center gap-[0.75em] cursor-pointer transiton-all duration-1000 ease-in-out" onClick={handleClickGithub}
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >
 
           <p className="text-[#030712] font-inter-tight text-[1rem] not-italic font-medium uppercase">github</p>
 
           <img src="/home-links.svg" alt="" className="transform transition-transform duration-300 hover:scale-110"/>
 
 
-        </div>
+        </motion.div>
 
 
 

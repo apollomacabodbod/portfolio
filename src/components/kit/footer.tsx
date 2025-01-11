@@ -4,15 +4,6 @@ import { motion } from "framer-motion";
 export default function Footer(){
 
 
-  const handleClickLinkedIn = () => {
-    window.open('https://www.linkedin.com/in/apollo-macabodbod-832a8a279/');
-  };
-    
-    
-    
-  const handleClickGithub = () => {
-    window.open('https://github.com/apollomacabodbod');
-  };
 
 
   return (<>
@@ -25,8 +16,61 @@ export default function Footer(){
 
 
 
+        <div className="flex items-center justify-between">
 
-        <p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic">© 2025 All Rights Reserved.</p>
+
+          <p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic mt-[0.5em]">apollomacabodbod8 <span className="text-white font-semibold"> @gmail.com</span></p>
+      
+
+
+          <div className="flex items-center justify-center gap-[1em]">
+
+
+       
+
+            <img src="/footer-linkedIn.svg" alt="" />
+            <img src="/footer-github.svg" alt="" />
+
+          </div>
+
+
+
+        </div>
+
+
+
+     
+        <div className="flex flex-col mt-[2em]">
+
+
+          <div className="flex items-center justify-between">
+
+
+            <div className="flex flex-col">
+              <p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic mt-[0.5em]">"In battle, plans are useless, but planning is indispensible." - Dwight D. Eisenhower</p>
+
+            </div>
+
+
+            <div className="flex flex-col">
+
+              <p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic mt-[0.5em]">© 2025 All Rights Reserved.</p>
+
+            </div>
+
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      
+       
 
 
 

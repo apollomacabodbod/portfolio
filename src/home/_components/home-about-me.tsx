@@ -5,7 +5,7 @@ import {
   TooltipTrigger,
 } from "src/components/tooltip"
 
-
+import { motion } from "framer-motion"
 
 
 export default function HomeAboutMe(){
@@ -26,7 +26,23 @@ export default function HomeAboutMe(){
 
         <div className="flex items-center justify-center border border-[#50B498] green">
 
-          <img src="/test2.png" alt="" className="min-w-[170px] object-cover  rounded-full"/>
+          <motion.img src="/test2.png" alt="" className="min-w-[170px] object-cover  rounded-full transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          />
 
         </div>
 
@@ -34,16 +50,84 @@ export default function HomeAboutMe(){
 
         <div className="flex flex-col max-w-[900px]">
 
-          <p className="text-[#030712] text-center lg:text-start font-inter-tight text-[2rem] not-italic font-semibold leading-[1em] mt-[1em] lg:mt-[0em]">Aim to build intuitive and engaging user experiences that inspire interaction</p>
+          <motion.p className="text-[#030712] text-center lg:text-start font-inter-tight text-[2rem] not-italic font-semibold leading-[1em] mt-[1em] lg:mt-[0em] transition-all duration-1000 ease-in-out"
+          
+          
+                    
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Aim to build intuitive and engaging user experiences that inspire interaction</motion.p>
 
-          <p className="mt-[1em] text-center lg:text-start font-inter-tight text-[1rem] not-italic font-normal ">
+          <motion.p className="mt-[1em] text-center lg:text-start font-inter-tight text-[1rem] not-italic font-normal transition-all duration-1000 ease-in-out"
+          
+          
+                       
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          
+          >
             
-            As a frontend developer with a keen eye for visual communication, I’m passionate developing high-quality React.js applications that are both visually stunning and user-friendly. </p>
+            As a frontend developer with a keen eye for visual communication, I’m passionate developing high-quality React.js applications that are both visually stunning and user-friendly. </motion.p>
 
 
-          <p className="font-inter-tight text-[1rem] mt-[0.5em] text-center lg:text-start">Tech </p>
+          <motion.p className="font-inter-tight text-[1rem] mt-[0.5em] text-center lg:text-start transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Tech </motion.p>
 
-          <div className="flex items-center justify-center lg:justify-start mt-[0.5em] gap-[0.5em]">
+          <motion.div className="flex items-center justify-center lg:justify-start mt-[0.5em] gap-[0.5em] transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >
 
 
             <TooltipProvider>
@@ -137,7 +221,7 @@ export default function HomeAboutMe(){
           
           
            
-          </div>
+          </motion.div>
 
 
         </div>
