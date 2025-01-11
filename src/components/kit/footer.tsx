@@ -28,6 +28,8 @@ export default function Footer(){
         <div className="custom-930:flex custom-930:items-center custom-930:justify-between">
 
 
+
+
       
           <motion.p className=" text-center text-[#4B5563] font-inter-tight text-[1rem]  font-normal not-italic mt-[0.5em] transition-all duration-1000 ease-in-out"
           
@@ -44,7 +46,7 @@ export default function Footer(){
             }}
           
           
-          >"The journey of a thousand miles begins with one step." — Lao Tzu</motion.p>
+          >Built with ReactJs & Tailwind</motion.p>
 
           <motion.div className="flex items-center justify-center gap-[1em] mt-[1em] transition-all duration-1000 ease-in-out"
           
