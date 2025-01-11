@@ -8,7 +8,7 @@ export default function HomeHeroSection(){
   return(<>
 
 
-    <div className="flex flex-col mt-[8em] border border-[#50B498] green "  >
+    <div className="flex flex-col mt-[8em]  "  >
 
 
       <motion.p className="text-[#030712] font-inter-tight text-[3.4rem] sm:text-[6.4rem] not-italic font-bold leading-[1em] transiton-all duration-1000 ease-in-out"

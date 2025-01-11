@@ -74,7 +74,7 @@ export default function HomeLatestWorksCards(){
 
 
 
-        <div className="flex flex-col mt-[1.5em] border border-[#50B498] green">
+        <div className="flex flex-col mt-[1.5em] ">
 
 
           <div className="flex items-center justify-between">
@@ -294,7 +294,7 @@ export default function HomeLatestWorksCards(){
 
 
 
-        <div className="flex flex-col mt-[1.5em] border border-[#50B498] green">
+        <div className="flex flex-col mt-[1.5em] ">
 
 
           <div className="flex items-center justify-between">

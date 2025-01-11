@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       <div className="flex flex-col px-[2em] bg-orange-400">
-        <p className="border border-[#50B498] green">test</p>
+        <p className="">test</p>
         <Button>Destructive</Button>
         <motion.p
           className="font-roboto"

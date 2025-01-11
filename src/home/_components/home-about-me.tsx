@@ -17,14 +17,14 @@ export default function HomeAboutMe(){
 
 
 
-    <div className="flex flex-col border border-[#50B498] green">
+    <div className="flex flex-col ">
 
 
 
       <div className="lg:flex lg:items-center lg:justify-between gap-[2em] ">
 
 
-        <div className="flex items-center justify-center border border-[#50B498] green">
+        <div className="flex items-center justify-center ">
 
           <motion.img src="/profile.jpeg" alt="" className="min-w-[170px] object-cover  rounded-full transition-all duration-1000 ease-in-out"
           
