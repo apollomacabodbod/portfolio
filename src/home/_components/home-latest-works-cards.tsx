@@ -207,6 +207,24 @@ export default function HomeLatestWorksCards(){
                     </Tooltip>
                   </TooltipProvider>
 
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/framer-motion.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Framer Motion</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
                 </motion.div>
 
 
@@ -486,6 +504,22 @@ export default function HomeLatestWorksCards(){
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/framer-motion.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Framer Motion</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
 
 
 
