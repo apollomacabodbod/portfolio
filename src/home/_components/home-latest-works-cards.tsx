@@ -135,7 +135,7 @@ export default function HomeLatestWorksCards(){
 
 
 
-            <div className="flex item-center py-[1em] px-[1.75em]  bg-[#030712] rounded-[6.25em] cursor-pointer gap-[0.5em]"
+            <div className="flex item-center  cursor-pointer  transform transition-transform duration-300 hover:scale-110"
               onClick={handleClickFilminaButton}
             >
 
@@ -291,7 +291,7 @@ export default function HomeLatestWorksCards(){
 
 
 
-            <div className="flex item-center py-[1em] px-[1.75em]  bg-[#030712] rounded-[6.25em] cursor-pointer gap-[0.5em]"
+            <div className="flex item-center  cursor-pointer  transform transition-transform duration-300 hover:scale-110"
               onClick={handleClickParkingButton}
             
             
