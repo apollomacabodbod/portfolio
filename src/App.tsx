@@ -5,6 +5,7 @@ import About from "./about/page";
 import Contact from "./contact/page";
 import Header from "./components/kit/header";
 import { LenisProvider } from "./context/smooth-scroll";
+import Footer from "./components/kit/footer";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      <Footer/>
 
 
 
