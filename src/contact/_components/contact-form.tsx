@@ -36,10 +36,10 @@ export default function ContactForm() {
   return (
     <div className="flex items-center justify-center min-h-screen ">
 
-      <form className="flex flex-col w-full p-[2em] " ref={form} onSubmit={sendEmail}>
+      <form className="flex flex-col w-full p-[2em] mt-[9em] " ref={form} onSubmit={sendEmail}>
             
         <motion.p
-          className="text-center text-[#333] font-inter-tight text-[1rem] font-semibold transition-all duration-1000 ease-in-out"
+          className=" text-center text-[#333] font-inter-tight text-[1rem] font-semibold transition-all duration-1000 ease-in-out"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
