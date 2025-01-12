@@ -6,6 +6,7 @@ import Header from "./components/kit/header";
 import { LenisProvider } from "./context/smooth-scroll";
 import Footer from "./components/kit/footer";
 import NotFound from "./components/kit/not-found";
+import { Toaster } from "react-hot-toast";
 
 function App() {
 
@@ -39,6 +40,9 @@ function App() {
         <Footer/>
 
       </div>
+
+
+      <Toaster position="top-right"/>
 
    
 

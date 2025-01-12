@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+import toast from "react-hot-toast";
 
 export default function ContactForm() {
-
 
 
 
@@ -23,10 +23,13 @@ export default function ContactForm() {
         })
         .then(
           () => {
-            alert("Successfully send")
+            toast.success("Email sent successfully")
             form.current?.reset(); // Clear all fields
           },
           (error) => {
+
+
+
           }
         );
     }
@@ -73,6 +76,7 @@ export default function ContactForm() {
                   transition: { duration: 0, ease: "easeInOut" },
                 },
               }}
+              required
             />
           </div>
   
@@ -93,6 +97,7 @@ export default function ContactForm() {
                   transition: { duration: 0, ease: "easeInOut" },
                 },
               }}
+              required
             />
           </div>
         </div>
@@ -114,7 +119,7 @@ export default function ContactForm() {
             },
           }}
 
-
+          required
         ></motion.textarea>
 
 
