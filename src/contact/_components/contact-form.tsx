@@ -36,7 +36,7 @@ export default function ContactForm() {
   return (
     <div className="flex items-center justify-center min-h-screen ">
 
-      <form className="flex flex-col w-full p-[2em] mt-[9em] " ref={form} onSubmit={sendEmail}>
+      <form className="flex flex-col w-full sm:p-[5em] mt-[9em] " ref={form} onSubmit={sendEmail}>
             
         <motion.p
           className=" text-center text-[#333] font-inter-tight text-[1rem] font-semibold transition-all duration-1000 ease-in-out"
@@ -55,7 +55,7 @@ export default function ContactForm() {
             Send a Message
         </motion.p>
   
-        <div className="flex items-center justify-between gap-[1em] mt-4">
+        <div className="sm:flex sm:items-center sm:justify-between sm:gap-[1em] mt-4">
           <div className="flex flex-col flex-1">
             <motion.input
               name="from_name"
@@ -76,7 +76,7 @@ export default function ContactForm() {
             />
           </div>
   
-          <div className="flex flex-col flex-1">
+          <div className="flex flex-col flex-1 mt-[2em] sm:mt-[0em]">
             <motion.input
               type="email"
               name="user_email"
