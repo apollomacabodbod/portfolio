@@ -11,12 +11,12 @@ export default function NotFound(){
 
 
 
-    <div className="flex flex-col min-h-screen max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green ">
+    <div className="flex flex-col min-h-screen max-w-[1200px] lg:mx-auto px-[1.25em] ">
 
 
 
       {/* component */}
-      <div className="flex flex-col items-center justify-center  border border-[#50B498] green flex-grow">
+      <div className="flex flex-col items-center justify-center  flex-grow">
 
 
 
