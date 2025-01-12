@@ -23,13 +23,11 @@ export default function ContactForm() {
         })
         .then(
           () => {
-            console.log("SUCCESS!");
             alert("Successfully send")
               
             form.current?.reset(); // Clear all fields
           },
           (error) => {
-            console.log("FAILED...", error.text);
           }
         );
     }
