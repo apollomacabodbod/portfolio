@@ -24,7 +24,6 @@ export default function ContactForm() {
         .then(
           () => {
             alert("Successfully send")
-              
             form.current?.reset(); // Clear all fields
           },
           (error) => {
