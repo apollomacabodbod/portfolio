@@ -6,7 +6,7 @@ export default function ContactMessage(){
   return (<>
 
 
-    <div className="flex flex-col mt-[9em] ">
+    <div className="flex flex-col mt-[9em] items-center justify-center flex-grow">
 
       <motion.p className="text-center text-[#333] font-inter-tight text-[1rem]   font-semibold transition-all duration-1000 ease-in-out"
       

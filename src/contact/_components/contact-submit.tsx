@@ -9,7 +9,7 @@ export default function ContactSubmit(){
   return(<>
 
 
-    <motion.div className="flex flex-col transition-all duration-1000 ease-in-out"
+    <motion.div className="flex flex-col transition-all duration-1000 ease-in-out items-center justify-center flex-grow"
 
 
       initial="hidden"
