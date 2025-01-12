@@ -1,5 +1,5 @@
-import React from "react";
-import {  Routes, Route} from "react-router-dom";
+import React, { useEffect } from "react";
+import {  Routes, Route, useLocation} from "react-router-dom";
 import Home from "./home/page";
 import Contact from "./contact/page";
 import Header from "./components/kit/header";
@@ -8,6 +8,17 @@ import Footer from "./components/kit/footer";
 import NotFound from "./components/kit/not-found";
 
 function App() {
+
+
+  const location = useLocation(); // Now safe to use because it's inside a Router
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+
+
+
   return (
 
     <LenisProvider>
@@ -22,7 +33,14 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
 
-      <Footer/>
+
+      <div key={location.pathname} >
+        
+        <Footer/>
+
+      </div>
+
+   
 
 
 
