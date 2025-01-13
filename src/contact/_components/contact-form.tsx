@@ -63,7 +63,7 @@ export default function ContactForm() {
             <motion.input
               name="from_name"
               type="text"
-              className="w-full outline-none border-b-2 border-[rgba(16,34,29,0.60)] py-[1em] text-[rgba(16,34,29,0.60)] font-inter-tight text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out"
+              className="w-full outline-none border-b-2 rounded-[0em] border-[rgba(16,34,29,0.60)] py-[1em] text-[rgba(16,34,29,0.60)] font-inter-tight text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out"
               placeholder="Your Name"
               initial="hidden"
               whileInView="visible"
@@ -84,7 +84,7 @@ export default function ContactForm() {
             <motion.input
               type="email"
               name="user_email"
-              className="w-full outline-none border-b-2 border-[rgba(16,34,29,0.60)] py-[1em] text-[rgba(16,34,29,0.60)] font-inter-tight text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out"
+              className="w-full outline-none border-b-2 rounded-[0em] border-[rgba(16,34,29,0.60)] py-[1em] text-[rgba(16,34,29,0.60)] font-inter-tight text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out"
               placeholder="Your Email"
               initial="hidden"
               whileInView="visible"
@@ -105,7 +105,7 @@ export default function ContactForm() {
         <motion.textarea
           name="message"
           id=""
-          className="outline-none border-b-2 border-[rgba(16,34,29,0.60)] pt-[1em] pb-[4em] mt-4 text-[rgba(16,34,29,0.60)] font-inter-tight text-[0.9375rem] not-italic font-normal resize-none transition-all duration-1000 ease-in-out"
+          className="outline-none border-b-2 border-[rgba(16,34,29,0.60)] rounded-[0em] pt-[1em] pb-[4em] mt-4 text-[rgba(16,34,29,0.60)] font-inter-tight text-[0.9375rem] not-italic font-normal resize-none transition-all duration-1000 ease-in-out"
           placeholder="Message"
           initial="hidden"
           whileInView="visible"
