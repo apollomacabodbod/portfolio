@@ -39,7 +39,7 @@ export default function ContactForm() {
   return (
     <div className="flex items-center justify-center min-h-screen ">
 
-      <form className="flex flex-col w-full sm:p-[5em] mt-[9em] " ref={form} onSubmit={sendEmail}>
+      <form className="flex flex-col w-full sm:p-[5em] my-auto mt-[9em] mb-[3em] " ref={form} onSubmit={sendEmail}>
             
         <motion.p
           className=" text-center text-[#333] font-inter-tight text-[1rem] font-semibold transition-all duration-1000 ease-in-out"
@@ -143,7 +143,7 @@ export default function ContactForm() {
         >
 
 
-          <div className="flex items-center justify-center mt-[2em] mb-[3em] transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
+          <div className="flex items-center justify-center mt-[2em]  transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
 
 
             <button className="flex items-center gap-[0.75em] bg-[#030712] py-[0.75em] px-[1.25em] rounded-[6.25em] cursor-pointer" type="submit" >
