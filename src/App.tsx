@@ -7,6 +7,7 @@ import { LenisProvider } from "./context/smooth-scroll";
 import Footer from "./components/kit/footer";
 import NotFound from "./components/kit/not-found";
 import { Toaster } from "react-hot-toast";
+import ScrollToTop from "./components/kit/scroll-top";
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
 
 
       <Header/>
+
+      <ScrollToTop/>
 
 
       <Routes>
