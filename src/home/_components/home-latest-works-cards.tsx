@@ -368,7 +368,7 @@ export default function HomeLatestWorksCards(){
         
         >
 
-          <img src="parking.jpeg" alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
+          <img  src="parking.jpeg"  alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
         </motion.div>
 
 
