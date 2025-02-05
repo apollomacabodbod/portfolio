@@ -130,20 +130,19 @@ export default function HomeAboutMe(){
           >
 
 
+
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
 
-                  <img src="/JavaScript-logo.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+                  <img src="/Typescript_logo_2020.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer "/>
           
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>Javascript</p>
+                  <p>Typescript</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
-
-
 
 
             <TooltipProvider>
@@ -155,6 +154,27 @@ export default function HomeAboutMe(){
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>ReactJs</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+
+
+
+          
+
+
+
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+
+                  <img src="/redux-toolkit.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer border border-white "/>
+          
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Redux Toolkit</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -176,18 +196,7 @@ export default function HomeAboutMe(){
 
 
 
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
 
-                  <img src="/Typescript_logo_2020.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
-          
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Typescript</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
 
 
 
@@ -196,14 +205,17 @@ export default function HomeAboutMe(){
               <Tooltip>
                 <TooltipTrigger asChild>
 
-                  <img src="/html5.png" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
+                  <img src="/react-router.svg" alt="" className="w-[2em] rounded-[0.25em] object-cover cursor-pointer"/>
           
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>HTML5</p>
+                  <p>React Router</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
+
+
+
           
            
             <TooltipProvider>

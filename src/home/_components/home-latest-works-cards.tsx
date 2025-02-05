@@ -94,7 +94,7 @@ export default function HomeLatestWorksCards(){
         <div className="flex flex-col mt-[1.5em] ">
 
 
-          <div className="flex items-center justify-between">
+          <div className="lg:flex lg:items-center lg:justify-between">
 
 
 
@@ -162,26 +162,27 @@ export default function HomeLatestWorksCards(){
                 >
 
                  
+                       
+
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
 
-                        <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+                        <img src="/Typescript_logo_2020.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer "/>
           
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Tailwind CSS</p>
+                        <p>Typescript</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
 
 
-
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
 
-                        <img src="/logo512.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+                        <img src="/React-icon.svg.png" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
           
                       </TooltipTrigger>
                       <TooltipContent>
@@ -193,16 +194,39 @@ export default function HomeLatestWorksCards(){
 
 
 
+          
+
+
 
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
 
-                        <img src="/Typescript_logo_2020.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+                        <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
           
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Typescript</p>
+                        <p>Tailwind CSS</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
+
+
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/react-router.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>React Router</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -244,7 +268,7 @@ export default function HomeLatestWorksCards(){
 
 
 
-            <div className="flex items-center gap-[0.75em]">
+            <div className="flex items-center gap-[0.75em] mt-[0.5em] lg:mt-[0em]">
 
 
               <div className="flex flex-col">
@@ -377,7 +401,7 @@ export default function HomeLatestWorksCards(){
         <div className="flex flex-col mt-[1.5em] ">
 
 
-          <div className="flex items-center justify-between">
+          <div className="lg:flex lg:items-center lg:justify-between">
 
 
 
@@ -444,26 +468,27 @@ export default function HomeLatestWorksCards(){
                 >
 
 
+                
+
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
 
-                        <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+                        <img src="/Typescript_logo_2020.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer "/>
           
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Tailwind CSS</p>
+                        <p>Typescript</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
 
 
-
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
 
-                        <img src="/logo512.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+                        <img src="/React-icon.svg.png" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
           
                       </TooltipTrigger>
                       <TooltipContent>
@@ -475,20 +500,58 @@ export default function HomeLatestWorksCards(){
 
 
 
+          
+
+
+
 
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
 
-                        <img src="/Typescript_logo_2020.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
+                        <img src="/redux-toolkit.png" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer border border-white "/>
           
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Typescript</p>
+                        <p>Redux Toolkit</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
 
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Tailwind CSS</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
+
+
+
+
+
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/react-router.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>React Router</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
 
 
                   <TooltipProvider>
@@ -543,7 +606,7 @@ export default function HomeLatestWorksCards(){
 
 
 
-            <div className="flex items-center gap-[0.75em]">
+            <div className="flex items-center gap-[0.75em] mt-[0.5em] lg:mt-[0em]">
 
 
               <div className="flex flex-col">
