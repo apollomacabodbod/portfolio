@@ -193,6 +193,21 @@ export default function HomeLatestWorksCards(){
 
 
 
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+
+                        <img src="/redux-toolkit.png" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer border border-white "/>
+          
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Redux Toolkit</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+
+
 
           
 
