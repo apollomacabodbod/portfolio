@@ -110,7 +110,7 @@ export default function HomeAboutMe(){
           
           
           
-          >Tech </motion.p>
+          >Tech Stack</motion.p>
 
           <motion.div className="flex items-center justify-center lg:justify-start mt-[0.5em] gap-[0.5em] transition-all duration-1000 ease-in-out"
           
