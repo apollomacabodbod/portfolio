@@ -77,7 +77,6 @@ export default function WorksCards() {
           style={{
             backgroundImage: `url(${item.image})`,
           }}
-          onClick={(e) => handleCardClick(e, item.id)}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
