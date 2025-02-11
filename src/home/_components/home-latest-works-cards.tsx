@@ -108,7 +108,7 @@ export default function WorksCards() {
             
 
             
-            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight">Source code : </p>
+            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight">Source Code :</p>
             <img 
               src="/github.png" 
               alt="GitHub Icon" 
