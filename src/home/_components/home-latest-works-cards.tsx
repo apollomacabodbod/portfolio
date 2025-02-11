@@ -35,7 +35,8 @@ export default function WorksCards() {
   };
 
   // Function to handle click based on item id
-  const handleCardClick = (id: number) => {
+  const handleCardClick =  (e: React.MouseEvent, id: number) => {
+    e.stopPropagation(); // Prevent the card click handler from firing
     if (id === 1) {
       handleClickCamping();
     } else if (id === 2) {
@@ -76,7 +77,7 @@ export default function WorksCards() {
           style={{
             backgroundImage: `url(${item.image})`,
           }}
-          onClick={() => handleCardClick(item.id)} // Call the function here
+          onClick={(e) => handleCardClick(e,item.id)} // Call the function here
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -103,6 +104,9 @@ export default function WorksCards() {
             className="absolute z-50 flex items-center gap-[0.5em] top-[17em] px-[1em]  opacity-0 group-hover:opacity-100 transition-opacity duration-500"
             onClick={(e) => handleClick(e, item.id)} // Pass both event and id here
           >
+            
+
+            
             <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight">Source code : </p>
             <img 
               src="/github.png" 
@@ -111,6 +115,30 @@ export default function WorksCards() {
              
             />
           </motion.div>
+
+
+
+
+          <motion.div
+            className="absolute z-50 flex items-center gap-[0.5em] top-[17em] right-[0.1%]   px-[1em]  opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            onClick={(e) => handleCardClick(e, item.id)} // Pass both event and id here
+          >
+            
+
+            
+            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight">Live </p>
+            <img 
+              src="/home-header-arrow.svg" 
+              alt="GitHub Icon" 
+              className="cursor-pointer w-[1.5em] h-[1.5em] "
+             
+            />
+          </motion.div>
+
+
+
+
+
         </motion.div>
       ))}
     </div>
