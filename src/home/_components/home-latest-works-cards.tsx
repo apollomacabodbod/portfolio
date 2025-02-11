@@ -91,7 +91,7 @@ export default function WorksCards() {
           }}
         >
           {/* Gradient Overlay (Hidden by Default, Visible on Hover) */}
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,18,30,0.7)_0%,rgba(17,18,30,1)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[0.3125em]"></div>
+          <div className="absolute inset-0 backdrop-blur-lg bg-[#030712]/40 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[0.3125em]"></div>
 
           {/* Title (Hidden by Default, Visible on Hover) */}
           <motion.p
