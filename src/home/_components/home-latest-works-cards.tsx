@@ -73,11 +73,11 @@ export default function WorksCards() {
       {data.map((item) => (
         <motion.div
           key={item.id}
-          className="group relative bg-cover h-[20.0625em] transition-all cursor-pointer duration-1000 ease-in-out rounded-[0.3125em]"
+          className="group relative bg-cover h-[20.0625em] shadow-lg drop-shadow-[0px_10px_20px_rgba(0,0,0,0.3)] transition-all cursor-pointer duration-1000 ease-in-out rounded-[0.3125em]"
           style={{
             backgroundImage: `url(${item.image})`,
           }}
-          onClick={(e) => handleCardClick(e,item.id)} // Call the function here
+          onClick={(e) => handleCardClick(e, item.id)}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -90,6 +90,7 @@ export default function WorksCards() {
             },
           }}
         >
+     
           {/* Gradient Overlay (Hidden by Default, Visible on Hover) */}
           <div className="absolute inset-0 backdrop-blur-lg bg-[#030712]/40 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[0.3125em]"></div>
 
