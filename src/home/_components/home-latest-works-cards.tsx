@@ -105,9 +105,9 @@ export default function WorksCards() {
           >
             <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight">Source code : </p>
             <img 
-              src="/github.svg" 
+              src="/github.png" 
               alt="GitHub Icon" 
-              className="cursor-pointer"
+              className="cursor-pointer w-[1.5em] h-[1.5em] "
              
             />
           </motion.div>
