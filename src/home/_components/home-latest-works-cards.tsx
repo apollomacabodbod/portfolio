@@ -1,730 +1,118 @@
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "src/components/tooltip"
-
-
 import { motion } from "framer-motion";
+import { useState } from "react";
 
+export default function WorksCards() {
+  type HomeCards = {
+    id: number;
+    description: string;
+    year: string;
+    image: string;
+  };
 
+  const [data] = useState<HomeCards[]>([
+    {
+      id: 1,
+      description: `Camping, Adventure and Recreational Park Website which gets the data from Faux API. 
+      Built with React using Hooks, Tailwind CSS for styling, Redux Toolkit for state management, React Router for dynamic routes and navigation, Shadcn/ui for UI frameworks and Framer Motion for animation. `,
+      image: "/parking-camp.png",
+      year: "2023",
+    },
+    {
+      id: 2,
+      description: `Film makers, Videographer  Website which gets the data from Faux API. 
+      Built with React using Hooks, Tailwind CSS for styling, Redux Toolkit for state management, React Router for dynamic routes and navigation and Framer Motion for animation. `,
+      image: "/film-makers.png",
+      year: "2023",
+    },
+  ]);
 
-export default function HomeLatestWorksCards(){
+  const handleClickCamping = () => {
+    window.open('https://park-camping-app.vercel.app/');
+  };
 
-
-  const handleClickFilmina = () => {
+  const handleClickFilm = () => {
     window.open('https://film-makers-app.vercel.app/');
   };
 
+  // Function to handle click based on item id
+  const handleCardClick = (id: number) => {
+    if (id === 1) {
+      handleClickCamping();
+    } else if (id === 2) {
+      handleClickFilm();
+    }
+  };
 
-  const handleClickFilminaButton = () => {
-    window.open('https://film-makers-app.vercel.app/');
+  // Handle click for GitHub icon
+  const handleClick = (e: React.MouseEvent, id: number) => {
+    e.stopPropagation(); // Prevent the card click handler from firing
+   
+    if (id === 1) {
+      CampingSourceCode()
+    } else if (id === 2) {
+      FilmSourceCode()
+    }
+
   };
 
 
 
-  const handleClickFilminaGithub = () => {
+  const CampingSourceCode = () => {
+    window.open('https://github.com/apollomacabodbod/park-camping-app');
+  };
+
+  const FilmSourceCode = () => {
     window.open('https://github.com/apollomacabodbod/film-makers-app');
   };
 
 
 
-
-
-  const handleClickParking = () => {
-    window.open('https://park-camping-app.vercel.app/');
-  };
-
-
-  const handleClickParkingButton = () => {
-    window.open('https://park-camping-app.vercel.app/');
-  };
-
-
-  const handleClickParkingGithub = () => {
-    window.open('https://github.com/apollomacabodbod/park-camping-app');
-  };
-
-
-
-
-
-
-
-
-
-
-
-  return(<>
-
-    <div className="grid custom-760:grid-cols-2 mt-[3.5em] gap-[2em] mb-[3.5em]">
-
-
-      <div className="flex flex-col ">
-
-
-        <div className="flex items-center cursor-pointer" onClick={handleClickFilmina}>
-
-          <motion.img src="filmakers.jpeg" alt="" className="w-full object-cover object-top rounded-[0.25em] transition-all duration-1000 ease-in-out"
-          
-          
-          
-          
-            
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, y: 10 },
-              visible: { 
-                opacity: 1, 
-                y: 0,
-                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-              },
-            }}
-      
-          
-          />
-        </div>
-
-
-
-
-        <div className="flex flex-col mt-[1.5em] ">
-
-
-          <div className="lg:flex lg:items-center lg:justify-between">
-
-
-
-            <div className="flex flex-col">
-
-
-              <motion.p className="text-[#030712] font-inter-tight text-[1.3rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
-              
-              
-                
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={{
-                  hidden: { opacity: 0, y: 10 },
-                  visible: { 
-                    opacity: 1, 
-                    y: 0,
-                    transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                  },
-                }}
-      
-              
-              
-              >Filmina</motion.p>
-
-
-              <div className="flex items-center gap-[0.5em]">
-              
-                <motion.p className="text-[#374151] font-inter-tight text-[1.125rem] not-italic font-normal transition-all duration-1000 ease-in-out"
-                
-                
-                             
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  variants={{
-                    hidden: { opacity: 0, y: 10 },
-                    visible: { 
-                      opacity: 1, 
-                      y: 0,
-                      transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                    },
-                  }}
-      
-                
-                
-                >Tech Stack</motion.p>
-
-                <motion.div className="flex items-center gap-[0.4em] transition-all duration-1000 ease-in-out"
-                
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  variants={{
-                    hidden: { opacity: 0, y: 10 },
-                    visible: { 
-                      opacity: 1, 
-                      y: 0,
-                      transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                    },
-                  }}
-                
-                
-                >
-
-                 
-                       
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/Typescript_logo_2020.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer "/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Typescript</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/React-icon.svg.png" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>ReactJs</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/redux-toolkit.png" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer border border-white "/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Redux Toolkit</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-
-          
-
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Tailwind CSS</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-
-
-
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/react-router.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>React Router</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/framer-motion.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Framer Motion</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-                </motion.div>
-
-
-              </div>
-                  
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div className="flex items-center gap-[0.75em] mt-[0.5em] lg:mt-[0em]">
-
-
-              <div className="flex flex-col">
-  
-  
-
-                <div className="flex item-center gap-[0.75em] cursor-pointer  transform transition-transform duration-300 hover:scale-110"
-                  onClick={handleClickFilminaGithub}
-    
-    
-                >
-
-
-                  <motion.img src="/header-github.svg" alt="" className="transition-all duration-1000 ease-in-out" 
-      
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0, y: 10 },
-                      visible: { 
-                        opacity: 1, 
-                        y: 0,
-                        transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                      },
-                    }}
-      
-      
-                  />
-
-
-
-
-                </div>
-
-  
-              </div>
-
-
-              <div className="flex flex-col">
-  
-  
-
-                <div className="flex item-center gap-[0.75em] cursor-pointer  transform transition-transform duration-300 hover:scale-110"
-                  onClick={handleClickFilminaButton}
-      
-      
-                >
-
-
-                  <motion.img src="/home-latest-works-arrow.svg" alt="" className="transition-all duration-1000 ease-in-out" 
-        
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0, y: 10 },
-                      visible: { 
-                        opacity: 1, 
-                        y: 0,
-                        transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                      },
-                    }}
-        
-        
-                  />
-
-
-
-
-                </div>
-
-    
-              </div>
-
-
-
-
-
-            </div>
-
-                    
-
-
-                  
-
-          </div>
-
-
-        </div>
-
-
-
-
-
-      </div>
-
-
-
-
-
-      <div className="flex flex-col ">
-
-
-        <motion.div className="flex items-center cursor-pointer transition-all duration-1000 ease-in-out" onClick={handleClickParking}
-        
-          
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1.875em] mt-[3.125em] mb-[5.875em] transition-all duration-1000 ease-in-out">
+      {data.map((item) => (
+        <motion.div
+          key={item.id}
+          className="group relative bg-cover h-[20.0625em] transition-all cursor-pointer duration-1000 ease-in-out rounded-[0.3125em]"
+          style={{
+            backgroundImage: `url(${item.image})`,
+          }}
+          onClick={() => handleCardClick(item.id)} // Call the function here
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={{
             hidden: { opacity: 0, y: 10 },
-            visible: { 
-              opacity: 1, 
+            visible: {
+              opacity: 1,
               y: 0,
-              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              transition: { duration: 0, ease: "easeInOut" },
             },
           }}
-        
-        
-        
         >
+          {/* Gradient Overlay (Hidden by Default, Visible on Hover) */}
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,18,30,0.7)_0%,rgba(17,18,30,1)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[0.3125em]"></div>
 
-          <img  src="parking.jpeg"  alt="" className="w-full object-cover object-top rounded-[0.25em]"/>
+          {/* Title (Hidden by Default, Visible on Hover) */}
+          <motion.p
+            className="absolute top-[1em] px-[1em] text-white text-[1rem] sm:text-[1.2em] font-inter-tight opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+            {item.description}
+          </motion.p>
+
+          <motion.div
+            className="absolute z-50 flex items-center gap-[0.5em] top-[17em] px-[1em]  opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            onClick={(e) => handleClick(e, item.id)} // Pass both event and id here
+          >
+            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight">Source code : </p>
+            <img 
+              src="/github.svg" 
+              alt="GitHub Icon" 
+              className="cursor-pointer"
+             
+            />
+          </motion.div>
         </motion.div>
-
-
-
-
-        <div className="flex flex-col mt-[1.5em] ">
-
-
-          <div className="lg:flex lg:items-center lg:justify-between">
-
-
-
-            <div className="flex flex-col">
-
-
-              <motion.p className="text-[#030712] font-inter-tight text-[1.3rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
-              
-              
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={{
-                  hidden: { opacity: 0, y: 10 },
-                  visible: { 
-                    opacity: 1, 
-                    y: 0,
-                    transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                  },
-                }}
-              
-              
-              >Park Camping</motion.p>
-
-
-              <div className="flex items-center gap-[0.5em]">
-                <motion.p className="text-[#374151] font-inter-tight text-[1.125rem] not-italic font-normal transition-all duration-1000 ease-in-out"
-                
-                  
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  variants={{
-                    hidden: { opacity: 0, y: 10 },
-                    visible: { 
-                      opacity: 1, 
-                      y: 0,
-                      transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                    },
-                  }}
-      
-                
-                
-                
-                >Tech Stack</motion.p>
-
-                <motion.div className="flex items-center gap-[0.4em] transition-all duration-1000 ease-in-out"
-                
-                
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  variants={{
-                    hidden: { opacity: 0, y: 10 },
-                    visible: { 
-                      opacity: 1, 
-                      y: 0,
-                      transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                    },
-                  }}
-                
-                
-                
-                >
-
-
-                
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/Typescript_logo_2020.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer "/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Typescript</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/React-icon.svg.png" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>ReactJs</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-
-          
-
-
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/redux-toolkit.png" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer border border-white "/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Redux Toolkit</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/Tailwind_CSS_Logo.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Tailwind CSS</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-
-
-
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/react-router.svg" alt="" className="w-[1.5em] rounded-[0.25em] object-cover cursor-pointer"/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>React Router</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/shadcnUI.png" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
-
-
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>ShadcnUI</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-
-                        <img src="/framer-motion.svg" alt="" className="w-[1.5em] object-cover rounded-[0.25em] cursor-pointer"/>
-          
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Framer Motion</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-
-
-
-
-
-
-
-                 
-                 
-                 
-                  
-
-                </motion.div>
-
-
-              </div>
-                  
-
-
-
-            </div>
-
-
-
-            <div className="flex items-center gap-[0.75em] mt-[0.5em] lg:mt-[0em]">
-
-
-              <div className="flex flex-col">
-          
-          
-
-                <div className="flex item-center gap-[0.75em] cursor-pointer  transform transition-transform duration-300 hover:scale-110"
-                  onClick={handleClickParkingGithub}
-            
-            
-                >
-
-
-                  <motion.img src="/header-github.svg" alt="" className="transition-all duration-1000 ease-in-out" 
-              
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0, y: 10 },
-                      visible: { 
-                        opacity: 1, 
-                        y: 0,
-                        transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                      },
-                    }}
-              
-              
-                  />
-
-
-
-
-                </div>
-
-          
-              </div>
-
-
-              <div className="flex flex-col">
-          
-          
-
-                <div className="flex item-center gap-[0.75em] cursor-pointer  transform transition-transform duration-300 hover:scale-110"
-                  onClick={handleClickParkingButton}
-              
-              
-                >
-  
-  
-                  <motion.img src="/home-latest-works-arrow.svg" alt="" className="transition-all duration-1000 ease-in-out" 
-                
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0, y: 10 },
-                      visible: { 
-                        opacity: 1, 
-                        y: 0,
-                        transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                      },
-                    }}
-                
-                
-                  />
-  
-  
-  
-  
-                </div>
-  
-            
-              </div>
-
-
-
-
-
-            </div>
-
-
-
-                    
-
-
-                  
-
-          </div>
-
-
-        </div>
-
-
-
-
-
-      </div>
-
-
-
+      ))}
     </div>
-    
-    
-  </>)
+  );
 }
