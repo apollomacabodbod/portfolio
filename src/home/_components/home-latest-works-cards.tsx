@@ -19,7 +19,7 @@ export default function WorksCards() {
     },
     {
       id: 2,
-      description: `Film makers, Videographer  Website which gets the data from Faux API. 
+      description: `Film makers and Videographer  Website which gets the data from Faux API. 
       Built with React using Hooks, Tailwind CSS for styling, Redux Toolkit for state management, React Router for dynamic routes and navigation and Framer Motion for animation. `,
       image: "/film-makers.png",
       year: "2023",
