@@ -109,7 +109,7 @@ export default function Footer(){
                   },
                 }}
               
-              >apollomacabodbod8 <span className="text-white font-semibold"> @gmail.com</span></motion.p>
+              >apollomacabodbod8<span className="text-white font-semibold">@gmail.com</span></motion.p>
 
             </div>
 
