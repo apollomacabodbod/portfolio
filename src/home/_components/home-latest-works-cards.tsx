@@ -95,19 +95,19 @@ export default function WorksCards() {
 
           {/* Title (Hidden by Default, Visible on Hover) */}
           <motion.p
-            className="absolute top-[1em] px-[1em] text-white text-[1rem] sm:text-[1.2em] font-inter-tight opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            className="absolute top-[1em] select-none px-[1em] text-white text-[1rem] sm:text-[1.2em] font-inter-tight opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           >
             {item.description}
           </motion.p>
 
           <motion.div
-            className="absolute z-50 flex items-center gap-[0.5em] top-[17em] px-[1em]  opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            className="absolute z-50 flex items-center gap-[0.5em] top-[17em] px-[1em] select-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
             onClick={(e) => handleClick(e, item.id)} // Pass both event and id here
           >
             
 
             
-            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight">Source Code :</p>
+            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight ">Source Code :</p>
             <img 
               src="/github.png" 
               alt="GitHub Icon" 
@@ -120,7 +120,7 @@ export default function WorksCards() {
 
 
           <motion.div
-            className="absolute z-50 flex items-center gap-[0.5em] top-[17em] right-[0.1%]   px-[1em]  opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            className="absolute z-50 flex items-center gap-[0.5em] select-none top-[17em] right-[0.1%]   px-[1em]  opacity-0 group-hover:opacity-100 transition-opacity duration-500"
             onClick={(e) => handleCardClick(e, item.id)} // Pass both event and id here
           >
             
