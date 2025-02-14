@@ -24,6 +24,17 @@ export default function WorksCards() {
       image: "/film-makers.png",
       year: "2023",
     },
+
+
+    {
+      id: 3,
+      description: `Coming Soon`,
+      image: "/coming-soon.png",
+      year: "2023",
+    },
+
+
+
   ]);
 
   const handleClickCamping = () => {
@@ -33,6 +44,10 @@ export default function WorksCards() {
   const handleClickFilm = () => {
     window.open('https://film-makers-app.vercel.app/');
   };
+
+
+
+
 
   // Function to handle click based on item id
   const handleCardClick =  (e: React.MouseEvent, id: number) => {
@@ -54,6 +69,11 @@ export default function WorksCards() {
       FilmSourceCode()
     }
 
+    else if (id === 3) {
+      RestoSourceCode()
+    }
+
+
   };
 
 
@@ -65,6 +85,13 @@ export default function WorksCards() {
   const FilmSourceCode = () => {
     window.open('https://github.com/apollomacabodbod/film-makers-app');
   };
+
+
+
+  const RestoSourceCode = () => {
+    window.open('https://github.com/apollomacabodbod/resto-app');
+  };
+
 
 
 
@@ -120,19 +147,21 @@ export default function WorksCards() {
 
 
           <motion.div
-            className="absolute z-50 flex items-center gap-[0.5em] select-none top-[17em] right-[0.1%]   px-[1em]  opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            onClick={(e) => handleCardClick(e, item.id)} // Pass both event and id here
+            className="absolute z-50 flex items-center gap-[0.5em] select-none top-[17em] right-[0.1%] px-[1em] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            onClick={(e) => handleCardClick(e, item.id)}
           >
-            
-
-            
-            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight">Live </p>
-            <img 
-              src="/home-header-arrow.svg" 
-              alt="GitHub Icon" 
-              className="cursor-pointer w-[1.5em] h-[1.5em] "
-             
-            />
+            {item.description !== "Coming Soon" && (
+              <>
+                <p className="text-white text-[1rem] sm:text-[1.2em] font-inter-tight">
+        Live
+                </p>
+                <img
+                  src="/home-header-arrow.svg"
+                  alt="GitHub Icon"
+                  className="cursor-pointer w-[1.5em] h-[1.5em]"
+                />
+              </>
+            )}
           </motion.div>
 
 
