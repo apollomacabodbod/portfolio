@@ -7,7 +7,7 @@ export default function HomeExperience() {
     <>
       <div className="flex flex-col mt-[4.5em]">
         <motion.p
-          className="text-[#030712] font-inter-tight text-[3rem] not-italic font-semibold leading-[1em]  "
+          className="text-[#030712] font-inter-tight text-[3rem] not-italic font-semibold leading-[1em]  transition-all duration-1000 ease-in-out "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -27,7 +27,7 @@ export default function HomeExperience() {
           <motion.img
             src={welaSchoolSystem}
             alt=""
-            className="w-full sm:w-[11.25em] object-cover rounded-[0.3125em] "
+            className="w-full sm:w-[11.25em] object-cover rounded-[0.3125em] transition-all duration-1000 ease-in-out "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -42,7 +42,7 @@ export default function HomeExperience() {
           />
           <div className="flex flex-col   mt-[3.125em] sm:mt-[0em]">
             <motion.p
-              className="text-[#030712] font-inter-tight text-[1.375rem] font-semibold"
+              className="text-[#030712] font-inter-tight text-[1.375rem] font-semibold transition-all duration-1000 ease-in-out "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -59,7 +59,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -76,7 +76,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#6B7280] font-inter-tight font-normal text-[1.125rem]"
+              className="text-[#6B7280] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -93,7 +93,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#6B7280] font-inter-tight font-normal text-[1.125rem]"
+              className="text-[#6B7280] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -110,7 +110,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] mt-[0.5em]"
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] mt-[0.5em] transition-all duration-1000 ease-in-out "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -128,7 +128,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -147,7 +147,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -165,7 +165,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out  "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -188,7 +188,7 @@ export default function HomeExperience() {
           <motion.img
             src={codebilityLogo}
             alt=""
-            className="w-full sm:w-[11.25em] object-cover rounded-[0.3125em] "
+            className="w-full sm:w-[11.25em] object-cover rounded-[0.3125em] transition-all duration-1000 ease-in-out "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -203,7 +203,7 @@ export default function HomeExperience() {
           />
           <div className="flex flex-col   mt-[3.125em] sm:mt-[0em]">
             <motion.p
-              className="text-[#030712] font-inter-tight text-[1.375rem] font-semibold"
+              className="text-[#030712] font-inter-tight text-[1.375rem] font-semibold transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -220,7 +220,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -237,7 +237,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#6B7280] font-inter-tight font-normal text-[1.125rem]"
+              className="text-[#6B7280] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -254,7 +254,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#6B7280] font-inter-tight font-normal text-[1.125rem]"
+              className="text-[#6B7280] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -271,7 +271,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] mt-[0.5em]"
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] mt-[0.5em] transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -290,7 +290,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -308,7 +308,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -327,7 +327,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -346,7 +346,7 @@ export default function HomeExperience() {
             </motion.p>
 
             <motion.p
-              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] "
+              className="text-[#374151] font-inter-tight font-normal text-[1.125rem] transition-all duration-1000 ease-in-out"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
