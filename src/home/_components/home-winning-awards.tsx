@@ -19,7 +19,7 @@ export default function HoneWinningAwards() {
             },
           }}
         >
-          Hackaton Event
+          Hackathon Event
         </motion.p>
         <div className="md:flex md:items-start gap-[3.5em]  mt-[3.125em]">
           <motion.img
@@ -71,7 +71,7 @@ export default function HoneWinningAwards() {
                 },
               }}
             >
-              Project: DineMate
+              Team Hackathon Project: DineMate
             </motion.p>
 
             <motion.p
