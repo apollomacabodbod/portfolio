@@ -4,6 +4,7 @@ export default function HoneWinningAwards() {
   return (
     <>
       <div className="flex flex-col mt-[4.5em] ">
+        {/*  */}
         <motion.p
           className="text-[#030712] font-inter-tight text-[3rem] not-italic font-semibold leading-[1em] transition-all duration-1000 ease-in-out"
           initial="hidden"
