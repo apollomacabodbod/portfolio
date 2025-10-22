@@ -4,7 +4,6 @@ import HomeHeroSection from "./_components/home-hero-section";
 import HomeLatestWorks from "./_components/home-latest-works";
 import HomeLatestWorksCards from "./_components/home-latest-works-cards";
 import HomeLinks from "./_components/home-links";
-import HoneWinningAwards from "./_components/home-winning-awards";
 
 export default function Home() {
   return (
