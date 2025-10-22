@@ -14,7 +14,6 @@ export default function Home() {
         <HomeLinks />
         <HomeAboutMe />
         <HomeExperience />
-        <HoneWinningAwards />
         <HomeLatestWorks />
         <HomeLatestWorksCards />
       </div>
