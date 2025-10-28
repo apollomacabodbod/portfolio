@@ -25,75 +25,62 @@ export default function WorksCards() {
       year: "2023",
     },
 
-
     {
       id: 3,
-      description: `Coming Soon`,
+      description: `Restaurant Catering Website Built with React TS using Hooks, Tailwind CSS for styling, React Router for dynamic routes and navigation and Framer Motion for animation. `,
       image: "/coming-soon.png",
       year: "2023",
     },
-
-
-
   ]);
 
   const handleClickCamping = () => {
-    window.open('https://park-camping-app.vercel.app/');
+    window.open("https://park-camping-app.vercel.app/");
   };
 
   const handleClickFilm = () => {
-    window.open('https://film-makers-app.vercel.app/');
+    window.open("https://film-makers-app.vercel.app/");
   };
 
-
-
-
+  const handleResto = () => {
+    window.open("https://resto-app-lac.vercel.app/");
+  };
 
   // Function to handle click based on item id
-  const handleCardClick =  (e: React.MouseEvent, id: number) => {
+  const handleCardClick = (e: React.MouseEvent, id: number) => {
     e.stopPropagation(); // Prevent the card click handler from firing
     if (id === 1) {
       handleClickCamping();
     } else if (id === 2) {
       handleClickFilm();
+    } else if (id === 3) {
+      handleResto();
     }
   };
 
   // Handle click for GitHub icon
   const handleClick = (e: React.MouseEvent, id: number) => {
     e.stopPropagation(); // Prevent the card click handler from firing
-   
+
     if (id === 1) {
-      CampingSourceCode()
+      CampingSourceCode();
     } else if (id === 2) {
-      FilmSourceCode()
+      FilmSourceCode();
+    } else if (id === 3) {
+      RestoSourceCode();
     }
-
-    else if (id === 3) {
-      RestoSourceCode()
-    }
-
-
   };
 
-
-
   const CampingSourceCode = () => {
-    window.open('https://github.com/apollomacabodbod/park-camping-app');
+    window.open("https://github.com/apollomacabodbod/park-camping-app");
   };
 
   const FilmSourceCode = () => {
-    window.open('https://github.com/apollomacabodbod/film-makers-app');
+    window.open("https://github.com/apollomacabodbod/film-makers-app");
   };
-
-
 
   const RestoSourceCode = () => {
-    window.open('https://github.com/apollomacabodbod/resto-app');
+    window.open("https://github.com/apollomacabodbod/resto-app");
   };
-
-
-
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1.875em] mt-[3.125em] mb-[5.875em] transition-all duration-1000 ease-in-out">
@@ -116,14 +103,11 @@ export default function WorksCards() {
             },
           }}
         >
-     
           {/* Gradient Overlay (Hidden by Default, Visible on Hover) */}
           <div className="absolute inset-0 backdrop-blur-lg bg-[#030712]/40 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[0.3125em]"></div>
 
           {/* Title (Hidden by Default, Visible on Hover) */}
-          <motion.p
-            className="absolute top-[1em] select-none px-[1em] text-white text-[1rem] sm:text-[1.2em] font-inter-tight opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-          >
+          <motion.p className="absolute top-[1em] select-none px-[1em] text-white text-[1rem] sm:text-[1.2em] font-inter-tight opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             {item.description}
           </motion.p>
 
@@ -131,20 +115,15 @@ export default function WorksCards() {
             className="absolute z-50 flex items-center gap-[0.5em] top-[17em] px-[1em] select-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
             onClick={(e) => handleClick(e, item.id)} // Pass both event and id here
           >
-            
-
-            
-            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight ">Source Code :</p>
-            <img 
-              src="/github.png" 
-              alt="GitHub Icon" 
+            <p className="text-white text-[1rem] sm:text-[1.2em]  font-inter-tight ">
+              Source Code :
+            </p>
+            <img
+              src="/github.png"
+              alt="GitHub Icon"
               className="cursor-pointer w-[1.5em] h-[1.5em] "
-             
             />
           </motion.div>
-
-
-
 
           <motion.div
             className="absolute z-50 flex items-center gap-[0.5em] select-none top-[17em] right-[0.1%] px-[1em] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -153,7 +132,7 @@ export default function WorksCards() {
             {item.description !== "Coming Soon" && (
               <>
                 <p className="text-white text-[1rem] sm:text-[1.2em] font-inter-tight">
-        Live
+                  Live
                 </p>
                 <img
                   src="/home-header-arrow.svg"
@@ -163,11 +142,6 @@ export default function WorksCards() {
               </>
             )}
           </motion.div>
-
-
-
-
-
         </motion.div>
       ))}
     </div>
