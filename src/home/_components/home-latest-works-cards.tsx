@@ -76,6 +76,8 @@ export default function WorksCards() {
       FilmSourceCode();
     } else if (id === 3) {
       RestoSourceCode();
+    } else if (id === 4) {
+      VillagueourceCode();
     }
   };
 
@@ -89,6 +91,10 @@ export default function WorksCards() {
 
   const RestoSourceCode = () => {
     window.open("https://github.com/apollomacabodbod/resto-app");
+  };
+
+  const VillagueourceCode = () => {
+    window.open("https://github.com/apollomacabodbod/villague-app");
   };
 
   return (
