@@ -31,6 +31,13 @@ export default function WorksCards() {
       image: "/coming-soon.png",
       year: "2023",
     },
+
+    {
+      id: 4,
+      description: `Coming Soon`,
+      image: "/villague-app.png",
+      year: "2023",
+    },
   ]);
 
   const handleClickCamping = () => {
