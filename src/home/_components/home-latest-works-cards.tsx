@@ -34,7 +34,7 @@ export default function WorksCards() {
 
     {
       id: 4,
-      description: `Coming Soon`,
+      description: `Villague Website Built with React TS using Hooks, Tailwind CSS for styling, React Router for dynamic routes and navigation and Framer Motion for animation. `,
       image: "/villague-app.png",
       year: "2023",
     },
@@ -52,6 +52,10 @@ export default function WorksCards() {
     window.open("https://resto-app-lac.vercel.app/");
   };
 
+  const handleVillague = () => {
+    window.open("https://villague-app.vercel.app/");
+  };
+
   // test
 
   // Function to handle click based on item id
@@ -63,6 +67,8 @@ export default function WorksCards() {
       handleClickFilm();
     } else if (id === 3) {
       handleResto();
+    } else if (id === 4) {
+      handleVillague();
     }
   };
 
