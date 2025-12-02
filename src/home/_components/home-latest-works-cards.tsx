@@ -38,6 +38,13 @@ export default function WorksCards() {
       image: "/villague-app.png",
       year: "2023",
     },
+
+    {
+      id: 5,
+      description: `Coming Soon.`,
+      image: "/logistix.png",
+      year: "2023",
+    },
   ]);
 
   const handleClickCamping = () => {
@@ -56,6 +63,10 @@ export default function WorksCards() {
     window.open("https://villague-app.vercel.app/");
   };
 
+  const handlelogistix = () => {
+    window.open("https://logistix-app-wheat.vercel.app/");
+  };
+
   // test
 
   // Function to handle click based on item id
@@ -69,6 +80,8 @@ export default function WorksCards() {
       handleResto();
     } else if (id === 4) {
       handleVillague();
+    } else if (id === 5) {
+      handlelogistix();
     }
   };
 
@@ -84,6 +97,8 @@ export default function WorksCards() {
       RestoSourceCode();
     } else if (id === 4) {
       VillagueourceCode();
+    } else if (id === 5) {
+      logistixourceCode();
     }
   };
 
@@ -101,6 +116,10 @@ export default function WorksCards() {
 
   const VillagueourceCode = () => {
     window.open("https://github.com/apollomacabodbod/villague-app");
+  };
+
+  const logistixourceCode = () => {
+    window.open("https://github.com/apollomacabodbod/logistix-app");
   };
 
   return (
