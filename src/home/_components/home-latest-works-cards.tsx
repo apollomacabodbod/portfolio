@@ -41,9 +41,9 @@ export default function WorksCards() {
 
     {
       id: 5,
-      description: `Coming Soon.`,
-      image: "/logistix.png",
-      year: "2023",
+      description: `Interiuz Landing Page - Architecture Agency Landing Page is a modern website built with HTML, CSS, and JavaScript. It is designed for architecture companies and agencies to effectively showcase their services and projects to customers. `,
+      image: "/background-Interiuz.png",
+      year: "2026",
     },
   ]);
 
@@ -63,8 +63,8 @@ export default function WorksCards() {
     window.open("https://villague-app.vercel.app/");
   };
 
-  const handlelogistix = () => {
-    window.open("https://logistix-app-wheat.vercel.app/");
+  const handleInteriuz = () => {
+    window.open("https://interiuz-app.vercel.app/");
   };
 
   // test
@@ -81,7 +81,7 @@ export default function WorksCards() {
     } else if (id === 4) {
       handleVillague();
     } else if (id === 5) {
-      handlelogistix();
+      handleInteriuz();
     }
   };
 
@@ -98,7 +98,7 @@ export default function WorksCards() {
     } else if (id === 4) {
       VillagueourceCode();
     } else if (id === 5) {
-      logistixourceCode();
+      InteriuzSourceCode();
     }
   };
 
@@ -129,8 +129,8 @@ export default function WorksCards() {
     window.open("https://github.com/apollomacabodbod/villague-app");
   };
 
-  const logistixourceCode = () => {
-    window.open("https://github.com/apollomacabodbod/logistix-app");
+  const InteriuzSourceCode = () => {
+    window.open("https://github.com/apollomacabodbod/interiuz-app");
   };
 
   return (
